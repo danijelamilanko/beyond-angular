@@ -1,0 +1,16 @@
+{
+    "login": {
+        "title": "Sign in",
+        "email": "Email",
+        "username": "Username",
+        "password": "Password",
+        "sign_in": "Sign in"
+    },
+    "general": {
+        "menu": {
+            "dashboard": "Dashboard"
+        }
+    },
+    "dashboard": {
+    }
+}
