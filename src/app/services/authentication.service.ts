@@ -3,12 +3,18 @@ import 'rxjs/add/operator/map';
 import {environment} from '../../environments/environment';
 import {HttpClient} from '@angular/common/http';
 import {JwtHelperService} from '@auth0/angular-jwt';
+import {User} from '../models/user';
 
 @Injectable()
 export class AuthenticationService {
+    private user: User;
 
     constructor(private http: HttpClient,
                 private jwtHelperService: JwtHelperService) {
+    }
+
+    getUser() {
+        return this.user;
     }
 
     login(username: string, password: string) {
@@ -25,6 +31,7 @@ export class AuthenticationService {
 
     setData(data) {
         localStorage.setItem('token', data.token);
+        this.user = {username: data.username};
     }
 
     loggedIn() {
