@@ -4,8 +4,8 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {ToastrModule} from 'ngx-toastr';
-import {DashboardComponent} from './pages/dashboard/dashboard.component';
-import {LoginComponent} from './pages/login/login.component';
+import {DashboardComponent} from './components/pages/dashboard/dashboard.component';
+import {LoginComponent} from './components/pages/login/login.component';
 import {AuthenticationService} from './services/authentication.service';
 import {routing} from './app.routing';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -15,12 +15,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {JwtModule} from '@auth0/angular-jwt';
 import {environment} from '../environments/environment';
+import { HeaderComponent } from './components/shared/header/header.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         DashboardComponent,
-        LoginComponent
+        LoginComponent,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,

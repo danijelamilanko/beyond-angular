@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
-import {AuthenticationService} from '../../services/authentication.service';
+import {AuthenticationService} from '../../../services/authentication.service';
 import {ToastrService} from 'ngx-toastr';
 import {Subscription} from 'rxjs/Subscription';
 

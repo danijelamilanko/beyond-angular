@@ -1,0 +1,13 @@
+/**
+ * Add Media Queries to tablet screen sizes as needed
+ */
+@media screen and (max-width: 960px) {
+    div.navigation {
+        overflow: auto;
+        margin-bottom: 20px;
+
+        a {
+            @include stack();
+        }
+    }
+}
