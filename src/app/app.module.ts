@@ -15,7 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {JwtModule} from '@auth0/angular-jwt';
 import {environment} from '../environments/environment';
-import { HeaderComponent } from './components/shared/header/header.component';
+import {HeaderComponent} from './components/shared/header/header.component';
 
 @NgModule({
     declarations: [
